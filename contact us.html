@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogger</title> 
+    <!--Icons file link-->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!----------Owl Carousel-------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    
+    <!--AOS library-->
+    <link rel="stylesheet" href="./css/aos.css">
+    
+    <!--Linking CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+<style>
+main{
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=text],input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: lightgray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  right: 0%;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: white;
+  margin: 50px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h1{
+    margin-top: 10px;  }
+}
+</style>
+</head>
+<body>
+    <!--Navigation Start-->
+    <nav class="nav" style="background-color: black;">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="index.html" class="text-gray" style="color:white">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="index.html" style="color:white">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="categories.html" style="color:white">Category</a>
+                </li>
+               <li class="nav-link">
+                    <a href="about us.html" style="color:white">About Us</a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact us.html" style="color:white">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social text-gray">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color: white;"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>
+          <a href="https://www.github.com" target="_blank"><i class="fab fa-github" style="color: white;"></i></a>
+        </div>
+        </div>
+    </nav>
+ <!--Navigation end-->
+
+          
+ <!---------------------------Main Site Section Start-------------------------->
+<main>      
+        <section class="container1" style="margin-top: 50px;">
+            <h1 style="text-align: center;color: #104f55;">Contact Us!</h1>
+            <div class="site-content">
+                <div class="posts">
+                    <div class="container">
+                        <form action="/action_page.php">
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                            <div class="col-25">
+                              <label for="lname">Email</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="email" id="lname" name="lastname" placeholder="write your email..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                              <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="india">India</option>
+                                <option value="canada">Bangladesh</option>
+                                <option value="usa">Pakistan</option>
+                                <option value="australia">England</option>
+                                <option value="canada">New Zealand</option>
+                                <option value="usa">Afghanishtan</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="subject">Feedback</label>
+                            </div>
+                            <div class="col-75">
+                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <input type="submit" value="Submit">
+                          </div>
+                        </form>
+                      </div>
+ 
+        <!--<a href="index.html"><button class="btn btn-blog" style="border-radius: 0; background-color:#45a049 ; color: white;">Go Back</button></a>
+        -->
+    </div>
+           <aside>
+        <div class="popular-post" style="margin-top:-10px;">
+            <h2>Popular Posts</h2>
+            <div class="post-content" data-aos="flip-up" data-aos-delay:="100">
+                <div class="post-image">
+                    <div>
+                        <img src="./asset/Blog-post/blog2.png" class="img" alt="blog1">
+                    </div>
+             </div>
+            <div class="post-title">
+            <a href="./singleblog2.html">Stray Kitten Found in Parking Lot Insists on Being with Family that Took Him in;</a>
+            </div>
+            </div>
+            <div class="post-content" data-aos="flip-up" data-aos-delay:="200">
+                <div class="post-image">
+                    <div>
+                        <img src="./asset/popular-post/m-blog-4.jpg" class="img" alt="blog1">
+                    </div>
+             </div>
+            <div class="post-title">
+            <a href="./singleblog7.html">The Complex Relationship Between Women And Clothes Fuels Fast Fashion</a>
+            </div>
+            </div>
+          
+        </div>
+    </aside>
+    </div>
+</main>
+ <!--Main Site Section End-->
+
+
+
+
+<!-------------------------Footer------------------------>
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay:="200">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea architecto consectetur iusto ut voluptatibus exercitationem quod! Neque harum illum ex fugit necessitatibus iure ratione, dolorum minus rem vitae unde. Nisi magnam et distinctio aspernatur atque fuga veritatis accusantium, dicta earum.</p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay:="200">
+            <h2>Newsletter</h2>
+            <p>Stay Updated With Us</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay:="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./asset/instagram/thumb-card3.png" alt="insta1">
+                <img src="./asset/instagram/thumb-card4.png" alt="insta2">
+                <img src="./asset/instagram/thumb-card5.png" alt="insta3">
+                <img src="./asset/instagram/thumb-card6.png" alt="insta4">
+                <img src="./asset/instagram/thumb-card7.png" alt="insta5">
+                <img src="./asset/instagram/thumb-card8.png" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay:="200">
+            <h2>Follow Us</h2>
+            <p>Let Us Be Social</p>
+            <div>
+            <a href="https://www.facebook.com/darshan.saraswat.96" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/darsh1031/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/SaraswatDarshan" target="_blank"><i class="fab fa-twitter" ></i></a>
+            <a href="https://github.com/DarshanSaraswat" target="_blank"><i class="fab fa-github" ></i></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+
+
+
+
+
+
+<!------------XXXXXXXXX-------------Footer------------XXXXX------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Linking J-query file-->
+<script src="./js/Jquery3.5.1.min.js"></script>
+
+<!----------Owl Carousel-------------->
+
+<script src="./js/owl.carousel.min.js"></script>
+
+<!--AOS library-->
+
+<script src="./js/aos.js"></script>
+
+<!--Linking JS file-->
+
+<script src="./js/main.js"></script>
+</body>
+</html>
